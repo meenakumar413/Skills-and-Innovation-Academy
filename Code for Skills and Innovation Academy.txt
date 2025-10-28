@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skills and Innovation Academy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* ===== FEATURES SECTION (continued from before) ===== */
+    #features h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 50px;
+      color: #333;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .feature-card {
+      background-color: #f9fafc;
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .feature-card i {
+      font-size: 2.5em;
+      color: #ff7f50;
+      margin-bottom: 15px;
+    }
+
+    .feature-card h3 {
+      margin-bottom: 10px;
+      font-size: 1.3em;
+      color: #333;
+    }
+
+    .feature-card p {
+      color: #666;
+      font-size: 1em;
+    }
+
+    /* ===== TESTIMONIALS SECTION ===== */
+    #testimonials {
+      background-color: #fefefe;
+      padding: 80px 20px;
+    }
+
+    #testimonials h2 {
+      text-align: center;
+      font-size: 2.2em;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .testimonial-card {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      font-style: italic;
+    }
+
+    .testimonial-card p {
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-card .name {
+      font-weight: 600;
+      color: #ff7f50;
+      font-style: normal;
+    }
+
+    /* ===== CONTACT / JOIN SECTION ===== */
+    #contact {
+      background: linear-gradient(135deg, #3ac6a2, #4a90e2);
+      color: white;
+      text-align: center;
+      padding: 90px 20px;
+    }
+
+    #contact h2 {
+      font-size: 2.2em;
+      margin-bottom: 20px;
+    }
+
+    #contact p {
+      font-size: 1.1em;
+      margin-bottom: 40px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      border-radius: 8px;
+      border: none;
+      font-size: 1em;
+    }
+
+    .contact-for
