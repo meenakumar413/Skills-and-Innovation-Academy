@@ -14,21 +14,15 @@ body {
 }
 
 /* ===== HEADER ===== */
-header {
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(12px);
-  padding: 20px 0;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+.logo-img {
+  width: 130px;
+  height: auto;
+  filter: drop-shadow(0 0 10px rgba(160, 100, 255, 0.6));
+  transition: transform 0.3s ease;
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 90%;
-  margin: auto;
+.logo-img:hover {
+  transform: scale(1.05);
 }
 
 .logo {
