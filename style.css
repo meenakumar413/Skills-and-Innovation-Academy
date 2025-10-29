@@ -19,29 +19,76 @@ body {
     margin: 0 auto;
 }
 
+/* ===== HEADER ===== */
 header {
-  background: linear-gradient(180deg, silver 0%, #f8f8f8 100%);
-  text-align: center;
-  padding: 20px;
+    background: linear-gradient(135deg, #dcdcdc, #f0f0f5); /* soft silver gradient */
+    color: #4a0080; /* deep purple text */
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.logo {
-  width: 150px;
-  border-radius: 12px;
-  margin-bottom: 10px;
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo-img {
-    height: 60px;
-    margin-right: 10px;
-    vertical-align: middle;
+    height: 55px;
+    width: auto;
 }
+
 .logo-text {
-    display: inline-block;
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 700;
-    color: #333;
-    vertical-align: middle;
+    color: #3e0a78;
+    letter-spacing: 0.5px;
 }
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #3e0a78;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #5a00b5;
+}
+
+/* Auth Buttons */
+.auth a {
+    color: #4a0080;
+    font-weight: 600;
+    margin-left: 15px;
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid #4a0080;
+    transition: 0.3s;
+}
+
+.auth a:hover {
+    background-color: #4a0080;
+    color: white;
+}
+
 h1 {
   font-size: 2rem;
   color: #4b0082;
