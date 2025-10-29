@@ -30,7 +30,18 @@ header {
   border-radius: 12px;
   margin-bottom: 10px;
 }
-
+.logo-img {
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.logo-text {
+    display: inline-block;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #333;
+    vertical-align: middle;
+}
 h1 {
   font-size: 2rem;
   color: #4b0082;
