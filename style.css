@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #e6e6f0, #f9f9ff);
+  color: #222;
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px 50px;
+  backdrop-filter: blur(8px);
+  border-bottom: 2px solid #dcdcdc;
+}
+
+.logo {
+  height: 70px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4b0082;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #6a5acd;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 60px 10%;
+  background: linear-gradient(120deg, #dcdcf7, #f0f0ff);
+}
+
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #4b0082;
+}
+
+.hero-text p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.hero-image img {
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+  padding: 80px 10%;
+  text-align: center;
+  background: white;
+}
+
+.about h2 {
+  font-size: 2rem;
+  color: #4b0082;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+/* Programs */
+.programs {
+  background: linear-gradient(120deg, #d8e4ff, #e8e6ff);
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.programs h2 {
+  color: #4b0082;
+  margin-bottom: 40px;
+}
+
+.program-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.program-card {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Testimonials */
+.testimonials {
+  padding: 80px 10%;
+  background: #f8f8ff;
+  text-align: center;
+}
+
+.testimonial-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.testimonial {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.testimonial p {
+  font-style: italic;
+}
+
+/* Contact */
+.contact {
+  background: linear-gradient(120deg, #d6ccff, #ece9ff);
+  text-align: center;
+  padding: 80px 10%;
+}
+
+.contact .btn {
+  display: inline-block;
+  background: #4b0082;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.contact .btn:hover {
+  background: #6a5acd;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f0f0f5;
+  color: #555;
+  font-size: 0.9rem;
+}
