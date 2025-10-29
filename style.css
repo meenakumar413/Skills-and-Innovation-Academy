@@ -14,16 +14,28 @@ body {
 }
 
 /* ===== HEADER ===== */
-.logo-img {
-  height: 100px;
-  width: auto;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: drop-shadow(0 0 15px rgba(100, 150, 255, 0.6));
+header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.logo-img:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 0 20px rgba(180, 120, 255, 0.9));
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: 700;
+  color: #a6c1ee;
+  text-shadow: 0 0 10px #7b5fff;
 }
 
 nav ul {
