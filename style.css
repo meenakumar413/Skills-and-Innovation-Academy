@@ -15,21 +15,15 @@ body {
 
 /* ===== HEADER ===== */
 .logo-img {
-  width: 130px;
-  height: auto;
-  filter: drop-shadow(0 0 10px rgba(160, 100, 255, 0.6));
-  transition: transform 0.3s ease;
+  height: 100px;
+  width: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: drop-shadow(0 0 15px rgba(100, 150, 255, 0.6));
 }
 
 .logo-img:hover {
   transform: scale(1.05);
-}
-
-.logo {
-  font-size: 2em;
-  font-weight: 700;
-  color: #a6c1ee;
-  text-shadow: 0 0 10px #7b5fff;
+  filter: drop-shadow(0 0 20px rgba(180, 120, 255, 0.9));
 }
 
 nav ul {
