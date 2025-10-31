@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>AI & Machine Learning Fundamentals — SIA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    /* Page & print settings */
+    @page {
+      size: 8.5in 8.5in; /* square page for PDF output */
+      margin: 0;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      -webkit-print-color-adjust: exact; /* preserve background colors when printing to PDF */
+    }
+
+    /* Slide container */
+    .slide {
+      width: 8.5in;
+      height: 8.5in;
+      box-sizing: border-box;
+      padding: 0.9in; /* interior padding like a slide margin */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      page-break-after: always;
+      /* Gradient background (purple -> blue) */
+      background: linear-gradient(135deg, #6a3fb8 0%, #3b8ddb 100%);
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    /* Top logo area */
+    .logo-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.25in;
+    }
+    img.logo {
+      width: 140px;
+      height: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.25));
+      /* Replace the src attribute with your SIA logo file path when ready */
+    }
+
+    /* Title styling */
+    h1.title {
+      margin: 0;
+      margin-top: 0.2in;
+      font-size: 40px;
+      line-height: 1.05;
+      font-weight: 700;
+      text-align: center;
+      color: #ffffff;
+      text-shadow: 0 2px 6px rgba(0,0,0,0.18);
+    }
+    p.subtitle {
+      margin: 0.15in 0 0.4in 0;
+      font-size: 16px;
+      opacity: 0.95;
+      text-align: center;
+    }
+
+    /* Slide content area */
+    .content {
+      width: 100%;
+      max-width: 7.5in;
+      flex: 1 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      color: #fff;
+    }
+
+    h2.heading {
+      font-size: 26px;
+      margin: 0 0 0.18in 0;
+      color: #fff;
+      text-shadow: 0 1px 3px rgba(0,0,0,0.12);
+    }
+    p.body {
+      font-size: 14.5px;
+      line-height: 1.6;
+      margin: 0 0 0.6in 0;
+      color: #f7f7fb;
+      max-width: 100%;
+    }
+
+    ul.bullets {
+      margin: 0 0 0.6in 1.05rem;
+      padding: 0;
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: #f7f7fb;
+    }
+    ul.bullets li {
+      margin: 0.35rem 0;
+    }
+
+    /* Footer small text */
+    .footer {
+      width: 100%;
+      text-align: center;
+      font-size: 11px;
+      opacity: 0.9;
+      margin-top: 0.4in;
+    }
+
+    /* Make sure print uses full bleed if the PDF/print driver supports it */
+    @media print {
+      body { margin: 0; }
+      .slide { box-shadow: none; }
+    }
+
+    /* Responsive preview (not used for final PDF) */
+    .preview-wrap {
+      display: none;
+    }
+    @media (max-width: 1000px) {
+      .slide { transform: scale(0.9); transform-origin: top left; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SLIDE 1: Title -->
+  <section class="slide" id="slide-1" aria-label="Title slide">
+    <div class="logo-container">
+      <!-- Replace src with your logo path (e.g. "sia-logo.png") -->
+      <img class="logo" src="" alt="SIA logo (replace src attribute)" />
+    </div>
+    <h1 class="title">AI &amp; Machine Learning Fundamentals</h1>
+    <p class="subtitle">A beginner’s guide to understanding AI and ML</p>
+
+    <div class="content">
+      <p class="body">Prepared by: <strong>Skills &amp; Innovation Academy (SIA)</strong></p>
+      <div class="footer">Slide 1 • AI &amp; Machine Learning Fundamentals</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 2: What is AI? -->
+  <section class="slide" id="slide-2" aria-label="What is AI?">
+    <div class="logo-container"><img class="logo" src="" alt="SIA logo (replace src attribute)"></div>
+
+    <h2 class="heading">What is AI?</h2>
+    <div class="content">
+      <p class="body">
+        <strong>Artificial Intelligence (AI)</strong> is when machines perform tasks that typically require human intelligence — for example recognizing speech,
+        making decisions, or learning from experience.
+      </p>
+      <ul class="bullets">
+        <li>Chatbots that answer questions</li>
+        <li>Recommendation systems (movies, music)</li>
+        <li>Self-driving car features and computer vision</li>
+      </ul>
+      <div class="footer">Slide 2 • What is AI?</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: Types of AI -->
+  <section class="slide" id="slide-3" aria-label="Types of AI">
+    <div class="logo-container"><img class="logo" src="" alt="SIA logo (replace src attribute)"></div>
+
+    <h2 class="heading">Types of AI</h2>
+    <div class="content">
+      <p class="body">
+        There are two commonly discussed categories:
+      </p>
+      <ul class="bullets">
+        <li><strong>Narrow AI</strong> — Designed for specific tasks (e.g., voice assistants, spam filters).</li>
+        <li><strong>General AI</strong> — A theoretical form of AI with human-like flexible intelligence (not yet achieved).</li>
+      </ul>
+      <div class="footer">Slide 3 • Types of AI</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: What is Machine Learning? -->
+  <section class="slide" id="slide-4" aria-label="What is Machine Learning?">
+    <div class="logo-container"><img class="logo" src="" alt="SIA logo (replace src attribute)"></div>
+
+    <h2 class="heading">What is Machine Learning?</h2>
+    <div class="content">
+      <p class="body">
+        <strong>Machine Learning (ML)</strong> is a subset of AI that teaches computers to learn patterns from data so they can make predictions or decisions without being explicitly programmed for that specific task.
+      </p>
+      <p class="body">
+        Example: An ML model can learn to tell whether an email is spam by training on many labeled examples.
+      </p>
+      <div class="footer">Slide 4 • What is Machine Learning?</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 5: Types of Machine Learning -->
+  <section class="slide" id="slide-5" aria-label="Types of Machine Learning">
+    <div class="logo-container"><img class="logo" src="" alt="SIA logo (replace src attribute)"></div>
+
+    <h2 class="heading">Types of Machine Learning</h2>
+    <div class="content">
+      <ul class="bullets">
+        <li><strong>Supervised Learning</strong> — Trained on labeled data (input → correct output).</li>
+        <li><strong>Unsupervised Learning</strong> — Finds structure in unlabeled data (e.g., clusters).</li>
+        <li><strong>Reinforcement Learning</strong> — Learns through trial and error with feedback (rewards).</li>
+      </ul>
+      <div class="footer">Slide 5 • Types of ML</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 6: How Machine Learning Works -->
+  <section class="slide" id="slide-6" aria-label="How Machine Learning Works">
+    <div class="logo-container"><img class="logo" src="" alt="SIA logo (replace src attribute)"></div>
+
+    <h2 class="heading">How Machine Learning Works</h2>
+    <div class="content">
+      <ol class="bullets" style="list-style-type: decimal;">
+        <li>Collect data</li>
+        <li>Train a model (algorithm learns from data)</li>
+        <li>Make predictions on new inputs</li>
+        <li>Evaluate performance and improve the model</li>
+      </ol>
+      <p class="body">ML uses algorithms and data to identify patterns and make predictions with increasing accuracy over time.</p>
+      <div class="footer">Slide 6 • How ML Works</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 7: Real-world Applications -->
+  <section class="slide" id="slide-7" aria-label="Real-world Applications">
+    <div class="logo-container"><img class="logo" src="" alt="SIA logo (replace src attribute)"></div>
+
+    <h2 class="heading">Real-world Applications</h2>
+    <div class="content">
+      <ul class="bullets">
+        <li><strong>Healthcare:</strong> Diagnosis support, patient monitoring</li>
+        <li><strong>Education:</strong> Personalized learning and tutoring</li>
+        <li><strong>Entertainment:</strong> Recommendations for movies & music</li>
+        <li><strong>Finance:</strong> Fraud detection, algorithmic trading</li>
+      </ul>
+      <div class="footer">Slide 7 • Real-world Applications</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 8: Key Takeaways -->
+  <section class="slide" id="slide-8" aria-label="Key Takeaways">
+    <div class="logo-container"><img class="logo" src="" alt="SIA logo (replace src attribute)"></div>
+
+    <h2 class="heading">Key Takeaways</h2>
+    <div class="content">
+      <p class="body">
+        • AI helps machines perform tasks that look like human intelligence.<br>
+        • Machine Learning is how machines learn from data to make better predictions.<br>
+        • AI and ML are already part of many everyday products and will shape future innovation.
+      </p>
+      <div class="footer">Slide 8 • Key Takeaways</div>
+    </div>
+  </section>
+
+  <!-- SLIDE 9: References / Resources -->
+  <section class="slide" id="slide-9" aria-label="References and Resources">
+    <div class="logo-container"><img class="logo" src="" alt="SIA logo (replace src attribute)"></div>
+
+    <h2 class="heading">References &amp; Resources</h2>
+    <div class="content">
+      <ul class="bullets">
+        <li>Elements of AI — University of Helsinki (free beginner course)</li>
+        <li>Google’s Teachable Machine — Learn ML concepts through examples</li>
+        <li>Kaggle Learn — Hands-on micro-courses and datasets</li>
+        <li>IBM AI Engineering &amp; Coursera introductory ML courses</li>
+      </ul>
+      <div class="footer">Slide 9 • References &amp; Resources</div>
+    </div>
+  </section>
+
+</body>
+</html>
