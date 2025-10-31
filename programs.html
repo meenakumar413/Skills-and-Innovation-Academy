@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs in Action - Skills and Innovation Academy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Skills and Innovation Academy Logo" class="logo">
+        <nav>
+            <button onclick="location.href='index.html'">Home</button>
+        </nav>
+    </header>
+
+    <section class="programs-hero">
+        <div class="hero-overlay">
+            <h1>Programs in Action</h1>
+            <p>See how our students innovate, create, and solve real-world problems.</p>
+        </div>
+    </section>
+
+    <section class="program-cards">
+        <div class="program-card">
+            <img src="https://via.placeholder.com/400x250?text=AI+Workshop" alt="AI Workshop">
+            <h3>AI Workshop</h3>
+            <p>Hands-on AI projects for beginners and young innovators.</p>
+        </div>
+        <div class="program-card">
+            <img src="https://via.placeholder.com/400x250?text=Robotics+Lab" alt="Robotics Lab">
+            <h3>Robotics Lab</h3>
+            <p>Build and program robots while learning engineering concepts.</p>
+        </div>
+        <div class="program-card">
+            <img src="https://via.placeholder.com/400x250?text=Innovation+Challenge" alt="Innovation Challenge">
+            <h3>Innovation Challenge</h3>
+            <p>Competitions that spark creativity and problem-solving skills.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Skills and Innovation Academy</p>
+    </footer>
+</body>
+</html>
+
+/* Programs hero section */
+.programs-hero {
+    height: 50vh;
+    background: url('programs-hero.jpg') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.programs-hero .hero-overlay {
+    background-color: rgba(75, 0, 130, 0.6); /* Purple overlay */
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+}
